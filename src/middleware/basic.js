@@ -4,10 +4,12 @@ const bcrypt = require('bcrypt');
 const base64 = require('base-64');
 const User = require('../models/users-model.js');
 module.exports = async (req,res,next) =>  {
+  const encoded = req.headers.authorization.split(' ')[1];
+  console.log('req.headers :',req.headers.authorization);
+  console.log('encoded :',encoded);
+  const decoded = base64.decode(encoded);
+  const [username,password] = decoded.split(':');
   try {
-    const encoded = req.headers.authorization.split(' ')[1];
-    const decoded = base64.decode(encoded);
-    const [username,password] = decoded.split(':');
     const user = await User.findOne({username});
     const isValid = await bcrypt.compare(password,user.password);
     if(isValid){

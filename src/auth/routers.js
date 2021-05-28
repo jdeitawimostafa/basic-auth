@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const basicAuth = require('../middleware/basic.js');
 router.post('/signup',signup);
-router.post('/signin',signin);
+router.post('/signin',basicAuth,signin);
 
 async function signup(req,res,next){
   try {
@@ -22,6 +22,7 @@ async function signup(req,res,next){
 }
 
 function signin(req,res,next){
+  console.log(req.user);
   res.status(200).json(req.user);
 }
 
