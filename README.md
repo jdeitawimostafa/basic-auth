@@ -28,6 +28,12 @@ npm start
 
 * Endpoint: 
 
+       * /api/v1/signup for create a new user . 
+
+
+
+       * /api/v1/signin for signin . 
+
 
 **npm start**
 
@@ -59,7 +65,9 @@ npm start
            
   
    
+   **uml diagram** 
    
+   ![image](./assets/lab 6 uml.PNG)
    
  
 
