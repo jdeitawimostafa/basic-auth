@@ -1,11 +1,6 @@
 # basic-auth
 
 
-
-
-
-
-
  ## **Setup**
 * .env requirements
   * PORT - Port Number
@@ -25,6 +20,8 @@ npm start
     * Do the routes assert the requirements (signup/signin)
 
 
+
+![testimage](./assets/testslab6.PNG)
 
 * Endpoint: 
 
@@ -67,7 +64,7 @@ npm start
    
    **uml diagram** 
    
- 
+ ![image](./assets/lab6uml.PNG)
    
  
 
