@@ -67,7 +67,7 @@ npm start
    
    **uml diagram** 
    
-   ![image](./assets/lab 6 uml.PNG)
+ 
    
  
 
