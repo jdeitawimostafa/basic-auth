@@ -1,6 +1,10 @@
 # basic-auth
 
 
+[PR](https://github.com/jdeitawimostafa/basic-auth/pull/2)
+
+[heroku deployment]()
+
  ## **Setup**
 * .env requirements
   * PORT - Port Number
